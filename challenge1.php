@@ -34,9 +34,9 @@
     </ul>
     <?php
         // Déclarez une variable
-        $age = 15;
+
         // Incrémentez la ici
-        $age++;
+
     ?>
     <p>Mon âge est : <?php echo $age ?> ans.</p>
 
@@ -48,9 +48,7 @@
     </ul>
     <?php
         // Votre boucle
-        for ($i = 0; $i < 10; $i++) {
-            echo($i);
-        }
+
     ?>
 
 
@@ -64,9 +62,7 @@
     <ul> <!-- j'ai créé le ul pour vous, de rien -->
         <?php
             // Votre boucle, qui crée des li et affiche les bons chiffres
-            for($i = 11; $i <= 15; $i++){
-                echo("<li>".$i."</li>");
-            }
+
         ?>
     </ul>
 
@@ -79,23 +75,7 @@
         <li>Dans un ul / li maintenant, affichez les éléments dont la longueur est supérieure à 5</li>
         <li>Indice: strlen</li>
     </ul>
-    <ol>
-        <?php
-            $array = ["bonjour", "hej", "ciao", "hallo", "dobroho ranku"];
-            foreach($array as $v) {
-                echo("<li>$v</li>");
-            }
-        ?>
-    </ol>
-    <ul>
-        <?php
-            foreach($array as $v) {
-                if (strlen($v) >=5) {
-                    echo("<li>$v</li>");
-                }
-            }
-        ?>
-    </ul>
+
 
 
 
@@ -107,7 +87,7 @@
         <li>Indice : vous n'avez qu'à écrire dans les balises php existantes, pas besoin d'en créer d'autres</li>
     </ul>
 
-    <?php /* Si j'ai 18 ans ou + */if($age >= 18){ ?>
+    <?php /* Si j'ai 18 ans ou + */  ?>
     <div>
         <p>Cette partie du code ne s'affiche que si j'ai <b>18 ans ou plus</b></p>
         <ul style="display:flex; list-style-type: none; font-size: 3em;">
@@ -116,7 +96,7 @@
             <li>🍾</li>
         </ul>
     </div>
-    <?php /* Sinon */ } else { ?>
+    <?php /* Sinon */  ?>
     <div>
         <p>Cette partie du code s'affiche que si <b>je suis mineur·e</b></p>
         <ul style="display:flex; list-style-type: none; font-size: 3em;">
@@ -125,7 +105,7 @@
             <li>🏫</li>
         </ul>
     </div>
-    <?php /* Fin du bloc if-else */ } ?>
+    <?php /* Fin du bloc if-else */  ?>
 
 
 
@@ -144,16 +124,13 @@
         et qui affiche une balise HTML img avec l'url donné en param (et une largeur de 100px)
         */
         // ...
-        function displayimg($url) {
-            echo ("<img src='".$url."' width='100px'/>");
-        }
+
 
         /* Appelez cette fonction avec 2 url différentes. Je vous en donne 2 en exemple :
         - https://api.dicebear.com/5.x/big-smile/svg?seed=Pepper
         - https://api.dicebear.com/5.x/big-smile/svg?seed=Zoey
         */
-        displayimg("https://api.dicebear.com/5.x/big-smile/svg?seed=Pepper");
-        displayimg("https://api.dicebear.com/5.x/big-smile/svg?seed=Zoey");
+
     ?>
 
     <hr>
